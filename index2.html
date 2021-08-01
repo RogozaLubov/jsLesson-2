@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <script>
+        let heightCeiling = prompt ("Enter height ceiling (in meters)");
+        let widhtRoom = prompt ("Enter widht room (in meters)");
+        let lenghtRoom = prompt ("Enter lenght room (in meters)");
+        
+        let numberWindws = prompt ("Enter number of windows ");
+        let heightWindw = prompt ("Enter  height window ");
+        let widhtWindw = prompt ("Enter widht window"); 
+        
+        let heightDoor = prompt ("Enter height door ");
+        let widhtDoor = prompt ("Enter widht door");
+
+        let perimetrRoom = (parseInt (widhtRoom) + parseInt (lenghtRoom)) * 2 ;
+        let sWall = parseInt (perimetrRoom) * parseInt (heightCeiling);
+
+        let sWindow = parseInt (widhtWindw) * parseInt (heightWindw) ;
+        let sDoor = parseInt (widhtDoor) * parseInt (heightDoor) ;
+        let sumAreas = parseInt (sWindow) + parseInt (sDoor);
+        let netArea = parseInt (sWall) - parseInt (sumAreas);
+        let sRolls = 5.3 ;
+
+        let numberRolls = Math.ceil (parseInt(netArea) / parseInt (sRolls));
+        
+        alert (numberRolls);
+
+
+    
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

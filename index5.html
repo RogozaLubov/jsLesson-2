@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task3</title>
+    <title>Document</title>
     <script>
-        let number;
-        let value = parseFloat(prompt('Введите первое число'), 0);
+       let number;
+       let value = parseFloat(prompt('Введите первое число'), 0);
        number=number >value ? number : value;
         value = parseFloat(prompt('Введите второе число'), 0);
         number=number >value ? number : value;
@@ -16,15 +16,26 @@
         value = parseFloat(prompt('Введите четвертое число'), 0);
         number=number >value ? number : value;
         value = parseFloat(prompt('Введите пятое число'), 0);
-        
-        alert ("Максимальное из пяти введеных чисел"+number);
+        alert ("max" +number);
     </script>
 </head>
 <body>
-    <h1>Задача 3. Максимальное из введенных чисел </h1> 
-    <p>
-        Пользователь вводит с клавиатуры 5 целых чисел. Напишите программу, которая
-        определяет максимальное из этих 5 чисел (Подсказка – решение должно быть простым).
-    </p>
+     var max = function (){
+        if (first > second){
+         console.log(first)
+        } else if (first == second){
+         console.log('Числа равны')
+        } else {
+        console.log(second);
+        }
+       }
 </body>
+
+
+var a = 10,
+    b = 5,
+    c = 20;
+ 
+var max = (a >= b && a >= c ? a : (b >= a && b >= c ? b : c));
+console.log(max); // 20
 </html>

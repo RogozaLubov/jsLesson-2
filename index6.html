@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        let yearLeapEntered = parseInt(prompt("Введите год", 2021));
-let yearLeap4Repeat = (yearLeapEntered % 4 < 1 ? true : false) && (yearLeapEntered < 4 ? false : true);
-let yearLeap400Repeat = (yearLeapEntered % 400 < 1 ? true : false);
-let yearLeap100Repeat = (yearLeapEntered % 100 < 1 ? false : true);
-
-
-let yearLeap =  (yearLeap4Repeat && yearLeap100Repeat) || !(yearLeap400Repeat && yearLeap100Repeat);
-
-alert(yearLeap4Repeat); 
-    </script>
+    <script src="script6.js"></script>
+   
 </head>
 <body>
-    
+    Задача 6. Линейное уравнение
+Линейным называют уравнение вида ax+b=0, где a и b - числовые коэффициенты,
+
+например 2x+4=0. Написать программу, решающую такое уравнение.
+
+Пользователь вводит значение коэффициентов a и b,
+
+выводит решение, учесть ситуации a=0 и b=0.
 </body>
 </html>

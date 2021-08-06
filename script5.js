@@ -4,12 +4,21 @@ let year =parseInt(prompt("Введите год"));
 
 let dayInMonth =0;
 let monthYear = null;
+
+let leapYear4 = year%4 ;
+let notLeapYear = year%100;
+let leapYear400  = notLeapYear%400;
+let years = (leapYear4 ===0 && notLeapYear !==0)|| leapYear400 ===0;
+
+
+
 if (month == 1) {
     monthYear ="January"
     dayInMonth = 31;
 }else if (month ==2 ) {
     monthYear = "February"
-    dayInMonth =28;
+    dayInMonth = years ==true ? 29:28 ;
+    
 }else if (month ==3 ) {
     monthYear = "March"
     dayInMonth =31;

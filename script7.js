@@ -7,9 +7,6 @@ if ( d<0 ){
     d *= -1;
 }
 
-
-
-
 let x1 = (((-b)+Math.sqrt(d))/(2*a)).toFixed(2);
 let x2 = (((-b)-Math.sqrt(d))/(2*a)).toFixed(2);
 
